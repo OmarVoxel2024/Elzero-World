@@ -100,6 +100,10 @@ ul {
   -o-transition: .5s;
 }
 
+.header-title::selection {
+  display: none;
+}
+
 .header-title:hover {
   color: white;
   border-color: white;
@@ -457,7 +461,7 @@ header li:has(input) input:hover {
   animation: bouncing 1.5s infinite;
   color: var(--main-color);
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   -webkit-animation: bouncing 1.5s infinite;
 }
 
@@ -681,10 +685,23 @@ header li:has(input) input:hover {
   z-index: 50;
 }
 
-.gallery .box .image:hover::before {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
+.gallery .box:hover .image::before {
+  animation: shine .5s forwards;
+  -webkit-animation: shine .5s forwards;
+}
+
+@keyframes shine {
+  75% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Gallery End */
