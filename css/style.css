@@ -92,6 +92,9 @@ ul {
   padding: 10px 20px;
   margin: 30px auto;
   position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
   width: fit-content;
   transition: .5s;
   -webkit-transition: .5s;
