@@ -184,6 +184,44 @@ ul {
 
 /* Global Rules End */
 
+/* Navigation Start */
+
+.navigate {
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: .5s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  font-size: 20px;
+  z-index: 10000000;
+}
+
+.navigate:hover {
+  cursor: pointer;
+  background-color: var(--main-color-alt);
+}
+
+.navigate *:hover {
+  cursor: pointer;
+}
+
+/* Navigation End */
+
 /* Header Start */
 
 header {
