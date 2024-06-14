@@ -128,4 +128,16 @@
 
   /* Articles End */
 
+  /* Features Start */
+
+  .features .container {
+    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+}
+
+  /* Features End */
+
 }
