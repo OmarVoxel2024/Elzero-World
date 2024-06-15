@@ -357,6 +357,15 @@ header:has(:checked) .other-links {
   min-width: 330px;
 }
 
+.landing .text,
+.landing .image {
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
 .other-links div {
   display: flex;
   gap: 30px;
@@ -412,6 +421,11 @@ header li:has(input) input:hover {
 
 .other-links li:not(:last-child) {
   border-bottom: 1px solid #ddd;
+}
+
+body:has(header :checked) .landing .text,
+body:has(header :checked) .landing .image {
+  opacity: 0;
 }
 
 /* Header End */
@@ -571,9 +585,14 @@ header li:has(input) input:hover {
 
 .articles .container {
   margin-top: 80px;
+  padding-bottom: calc(var(--main-padding) / 2);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
+}
+
+.articles .header-title {
+  margin-bottom: -30px;
 }
 
 .articles .box {
@@ -945,6 +964,7 @@ header li:has(input) input:hover {
 .testimonials {
   padding: calc(var(--main-padding) / 1.5) 0;
   background-color: var(--second-color);
+  padding-bottom: 60px;
 }
 
 .testimonials .header-title {

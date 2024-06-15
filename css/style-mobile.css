@@ -149,6 +149,14 @@
     padding-bottom: var(--main-padding);
   }
 
+  .features .header-title {
+    margin-top: 15px;
+  }
+
+  .features .container {
+    margin-top: 45px;
+  }
+
   /* Features End */
 
   /* Testimonials Start */
@@ -175,6 +183,7 @@
 
   .team-members {
     padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .team-members .container {
@@ -230,6 +239,14 @@
   }
 
   /* Our Skills End */
+
+  /* Services Start */
+
+  .services .header-title {
+    margin-top: 35px;
+  }
+
+  /* Services End */
 
   /* How It Works Start */
 
