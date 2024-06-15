@@ -171,4 +171,24 @@
 
   /* Team Members End */
 
+  /* Our Skills Start */
+
+  .our-skills {
+    padding: calc(var(--main-padding) / 2) 0;
+  }
+
+  .our-skills .container {
+    margin-top: 20px;
+  }
+
+  .our-skills img {
+    display: none;
+  }
+
+  .our-skills .skill .bar {
+    width: calc(100vw - 30px);
+  }
+
+  /* Our Skills End */
+
 }

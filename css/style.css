@@ -1335,3 +1335,86 @@ header li:has(input) input:hover {
 }
 
 /* Services End */
+
+/* Our Skills Start */
+
+.our-skills {
+  padding: calc(var(--main-padding) / 2) 0;
+}
+
+.our-skills .container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.our-skills .skill {
+  position: relative;
+}
+
+.our-skills .skill p {
+  font-weight: bold;
+  position: relative;
+  font-size: 20px;
+}
+
+.our-skills .skill p::before {
+  content: "80%";
+  border: 1px solid var(--text-color);
+  font-size: 17px;
+  right: 0;
+  top: 50%;
+  padding: 3px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.our-skills .skills-bars .skill:nth-child(2) p::before {
+  content: "85%";
+}
+
+.our-skills .skills-bars .skill:nth-child(3) p::before {
+  content: "70%";
+}
+
+.our-skills .bar {
+  display: inline-block;
+  width: 650px;
+  background-color: #eee;
+  position: relative;
+  height: 30px;
+}
+
+.our-skills .bar::before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  left: 0;
+  height: 100%;
+  width: 80%;
+}
+
+.our-skills .skills-bars .skill:nth-child(2) .bar::before {
+  width: 85%;
+}
+
+.our-skills .skills-bars .skill:nth-child(3) .bar::before {
+  width: 70%;
+}
+
+/* Our Skills End */
