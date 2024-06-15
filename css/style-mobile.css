@@ -128,4 +128,37 @@
 
   /* Articles End */
 
+  /* Team Members Start */
+
+  .team-members .container {
+    margin-top: 50px;
+  }
+
+  .team-members .person {
+    height: 430px;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+  .team-members .header-title {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+  .team-members .image-social {
+    transform: translateX(-50px) scale(.9);
+    -webkit-transform: translateX(-50px) scale(.9);
+    -moz-transform: translateX(-50px) scale(.9);
+    -ms-transform: translateX(-50px) scale(.9);
+    -o-transform: translateX(-50px) scale(.9);
+}
+
+  /* Team Members End */
+
 }
