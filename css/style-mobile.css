@@ -133,19 +133,58 @@
   /* Articles Start */
 
   .articles .header-title {
-    margin-top: 80px;
+    margin-top: 85px;
+  }
+
+  .articles .container {
+    margin-top: 60px;
   }
 
   /* Articles End */
 
+  /* Features Start */
+
+  .features {
+    padding-top: 2px;
+    padding-bottom: var(--main-padding);
+  }
+
+  /* Features End */
+
+  /* Testimonials Start */
+
+  .testimonials {
+    padding-top: 5px;
+  }
+
+  .testimonials .header-title {
+    transform: scale(.85);
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    -ms-transform: scale(.85);
+    -o-transform: scale(.85);
+  }
+
+  .testimonials .container {
+    margin-top: 65px;
+  }
+
+  /* Testimonials End */
+
   /* Team Members Start */
 
+  .team-members {
+    padding-top: 10px;
+  }
+
   .team-members .container {
-    margin-top: 50px;
+    margin: 0 auto;
+    gap: 0;
   }
 
   .team-members .person {
     height: 430px;
+    margin: -5px 0;
     transform: scale(.9);
     -webkit-transform: scale(.9);
     -moz-transform: scale(.9);
@@ -155,6 +194,7 @@
 
   .team-members .header-title {
     transform: scale(.8);
+    margin-bottom: 20px;
     -webkit-transform: scale(.8);
     -moz-transform: scale(.8);
     -ms-transform: scale(.8);

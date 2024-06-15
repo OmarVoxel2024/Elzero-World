@@ -777,6 +777,7 @@ header li:has(input) input:hover {
 
 .features {
   padding: 40px 0;
+  padding-top: 1px;
 }
 
 .features .container {
@@ -942,22 +943,17 @@ header li:has(input) input:hover {
 /* Testimonials Start */
 
 .testimonials {
-  padding: var(--main-padding) 0;
+  padding: calc(var(--main-padding) / 3) 0;
   background-color: var(--second-color);
 }
 
 .testimonials .header-title {
   z-index: 100;
-  transform: scale(.85);
-  -webkit-transform: scale(.85);
-  -moz-transform: scale(.85);
-  -ms-transform: scale(.85);
-  -o-transform: scale(.85);
 }
 
 .testimonials .container {
   display: grid;
-  margin-top: 100px;
+  margin-top: 80px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 50px;
 }
@@ -1012,12 +1008,12 @@ header li:has(input) input:hover {
 /* Team Members Start */
 
 .team-members {
-  padding: 40px 0;
+  padding: calc(var(--main-padding) / 3) 0;
 }
 
 .team-members .container {
   display: grid;
-  margin-top: 90px;
+  margin-top: 50px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 310px));
   justify-content: center;
   gap: 60px;
@@ -1336,7 +1332,7 @@ header li:has(input) input:hover {
 /* Our Skills Start */
 
 .our-skills {
-  padding: calc(var(--main-padding) / 2) 0;
+  padding: calc(var(--main-padding) / 3) 0;
 }
 
 .our-skills .container {
