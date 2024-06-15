@@ -86,6 +86,7 @@ ul {
 }
 
 .header-title {
+  z-index: 100;
   text-transform: uppercase;
   font-size: 35px;
   border: 3px solid;
@@ -415,7 +416,7 @@ header li:has(input) input:hover {
 
 /* Header End */
 
-/* Start Landing */
+/* Landing Start */
 
 .landing {
   position: relative;
@@ -564,7 +565,7 @@ header li:has(input) input:hover {
   cursor: pointer;
 }
 
-/* Start End */
+/* Landing End */
 
 /* Articles Start */
 
@@ -1161,3 +1162,176 @@ header li:has(input) input:hover {
 }
 
 /* Team Members End */
+
+/* Services Start */
+
+.services {
+  background-color: var(--second-color);
+  padding: calc(var(--main-padding) / 2) 0;
+}
+
+.services .container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.service i {
+  color: #D5D5D5;
+}
+
+.service {
+  counter-increment: services-counter;
+  display: flex;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  position: relative;
+}
+
+.service::before,
+.service::after {
+  content: "";
+  background-color: var(--main-color-alt);
+  height: 3px;
+  position: absolute;
+  top: -3px;
+  width: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.service::before {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.service::after {
+  right: 50%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+.service:hover::before,
+.service:hover::after {
+  width: 100%;
+}
+
+.service:hover {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+}
+
+.service .details {
+  display: flex;
+  background-color: #F9F9F9;
+  position: relative;
+  color: white;
+  justify-content: flex-end;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.service .details a {
+  color: var(--main-color);
+}
+
+.service h3 {
+  margin: 0;
+  color: var(--main-color);
+  font-size: 25px;
+}
+
+.service .icon-text {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.service p {
+  position: absolute;
+}
+
+.service .number {
+  margin: 0;
+  left: -15px;
+  bottom: 0;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+}
+
+.service .number::after {
+  content: "";
+  z-index: -1;
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  left: -15px;
+  background-color: #D5D5D5;
+  transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+}
+
+.service .number span {
+  font-size: 30px;
+  background-color: var(--main-color);
+  font-weight: bold;
+  width: 100px;
+  left: -12px;
+  height: 50px;
+  position: absolute;
+  bottom: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+}
+
+.service .number span::before {
+  content: "0"counter(services-counter);
+  transform: translateX(10px) skewX(35deg);
+  -webkit-transform: translateX(10px) skewX(35deg);
+  -moz-transform: translateX(10px) skewX(35deg);
+  -ms-transform: translateX(10px) skewX(35deg);
+  -o-transform: translateX(10px) skewX(35deg);
+}
+
+/* Services End */

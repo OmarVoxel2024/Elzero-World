@@ -22,7 +22,12 @@
 
   header:has(:checked) .other-links {
     bottom: -534px;
-  }
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
 
   .header-links > li a,
   .header-links > li:nth-last-child(2) {
@@ -45,7 +50,12 @@
   header .other-links {
     height: fit-content;
     padding: 0;
-  }
+    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    -o-transform: translateY(200px);
+}
 
   header .other-links div {
     flex-direction: column;
