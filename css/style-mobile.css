@@ -138,6 +138,14 @@
 
   /* Articles End */
 
+  /* Gallery Start */
+
+  .gallery {
+    margin-top: -30px;
+  }
+
+  /* Gallery End */
+
   /* Team Members Start */
 
   .team-members .container {

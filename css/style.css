@@ -576,10 +576,6 @@ header li:has(input) input:hover {
   gap: 30px;
 }
 
-.articles {
-  margin-bottom: 100px;
-}
-
 .articles .box {
   box-shadow: 0 2px 10px #ddd;
   overflow: hidden;
