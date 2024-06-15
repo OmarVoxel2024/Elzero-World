@@ -191,4 +191,37 @@
 
   /* Our Skills End */
 
+  /* How It Works Start */
+
+  .how-it-works {
+    padding: calc(var(--main-padding) / 4) 0;
+  }
+
+  .how-it-works .container {
+    margin: 40px 0;
+  }
+
+  .how-it-works .header-title {
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+  .how-it-works .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works .text {
+    align-items: center;
+  }
+
+  .how-it-works p {
+    text-align: center;
+  }
+
+  /* How It Works End */
+
 }
