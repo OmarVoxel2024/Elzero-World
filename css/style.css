@@ -1009,6 +1009,7 @@ header li:has(input) input:hover {
 
 .team-members {
   padding: calc(var(--main-padding) / 3) 0;
+  padding-bottom: var(--main-padding);
 }
 
 .team-members .container {
