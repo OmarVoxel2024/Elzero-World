@@ -943,7 +943,7 @@ header li:has(input) input:hover {
 /* Testimonials Start */
 
 .testimonials {
-  padding: calc(var(--main-padding) / 3) 0;
+  padding: calc(var(--main-padding) / 1.5) 0;
   background-color: var(--second-color);
 }
 
