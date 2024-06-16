@@ -398,4 +398,20 @@
 
 /* Top Videos End */
 
+/* Stats Start */
+
+.stats-shadow {
+  padding: calc(var(--main-padding) / 3) 0;
+}
+
+.stats h2 {
+  font-size: 30px;
+}
+
+.stats-container {
+  gap: 25px;
+}
+
+/* Stats End */
+
 }
