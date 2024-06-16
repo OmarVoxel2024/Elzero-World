@@ -1983,7 +1983,11 @@ body:has(header :checked) .landing .image {
 /* Top Videos Start */
 
 .top-videos {
-  padding: var(--main-padding) 0;
+  padding: calc(var(--main-padding) / 3) 0;
+}
+
+.top-videos .container {
+  margin-top: 45px;
 }
 
 .top-videos .holder {

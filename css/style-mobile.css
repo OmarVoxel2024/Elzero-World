@@ -388,6 +388,10 @@
   padding-top: 0;
 }
 
+.top-videos .container {
+  margin-top: 0;
+}
+
 .top-videos .info {
   padding: 10px 15px !important;
 }
