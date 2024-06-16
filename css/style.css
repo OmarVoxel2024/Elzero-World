@@ -1968,4 +1968,122 @@ body:has(header :checked) .landing .image {
   }
 }
 
+@media (max-width: 1200px) {
+  .pricing .plan:nth-child(2) {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
+
 /* Pricing End */
+
+/* Top Videos Start */
+
+.top-videos {
+  padding: var(--main-padding) 0;
+}
+
+.top-videos .holder {
+  display: flex;
+  border: 1px solid #d4d4d4;
+}
+
+.top-videos .preview {
+  background-color: #e2e2e2;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-videos .preview img {
+  max-width: 100%;
+}
+
+.top-videos .preview .info {
+  background-color: white;
+  padding: 20px 25px;
+}
+
+.top-videos .videos-list li:not(:last-child) {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.top-videos .videos-list {
+  width: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 496px;
+}
+
+.top-videos .videos-list::-webkit-scrollbar {
+  display: none;
+}
+
+.top-videos .videos-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.top-videos .videos-list li:hover {
+  background-color: #FAFAFA;
+  cursor: pointer;
+}
+
+.top-videos .videos-list li *:hover {
+  cursor: pointer;
+}
+
+.top-videos .name {
+  font-weight: bold;
+}
+
+.top-videos .videos-list li span {
+  color: var(--text-color);
+}
+
+.top-videos .videos-list li p {
+  margin: 0;
+  transition: inherit;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -ms-transition: inherit;
+  -o-transition: inherit;
+}
+
+.top-videos .videos-list li:hover p {
+  color: var(--main-color-alt);
+}
+
+.top-videos .name {
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .top-videos .holder {
+    flex-direction: column;
+  }
+
+  .top-videos .videos-list {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/* Top Videos End */

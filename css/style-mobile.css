@@ -382,4 +382,16 @@
 
 /* Pricing End */
 
+/* Top Videos Start */
+
+.top-videos {
+  padding-top: 0;
+}
+
+.top-videos .info {
+  padding: 10px 15px !important;
+}
+
+/* Top Videos End */
+
 }
