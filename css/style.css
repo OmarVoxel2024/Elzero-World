@@ -1564,10 +1564,13 @@ body:has(header :checked) .landing .image {
   gap: 60px;
   align-items: center;
   justify-content: center;
+}
+
+:has([class*=dot]) {
   position: relative;
 }
 
-.events [class*=dots] {
+[class*=dot] {
   position: absolute;
   width: 204px;
   height: 186px;
@@ -1669,6 +1672,10 @@ body:has(header :checked) .landing .image {
   gap: 50px;
 }
 
+.events .subscribe {
+  margin-bottom: var(--main-padding);
+}
+
 .events .time > div:hover {
   border-color: var(--main-color-alt);
 }
@@ -1759,3 +1766,206 @@ body:has(header :checked) .landing .image {
 }
 
 /* Events End */
+
+/* Pricing Start */
+
+.pricing {
+  padding: var(--main-padding) 0;
+  background-color: var(--second-color);
+}
+
+.pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pricing .plan {
+  box-shadow:    0 12px 20px 0 rgb(0 0 0 / 13%),    0 2px 4px 0 rgb(0 0 0 / 12%);
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing .plan::before,
+.pricing .plan::after {
+  content: "";
+  position: absolute;
+  transition: var(--main-transition);
+  height: 50%;
+  width: 100%;
+  background-color: #f6f6f6;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.pricing .plan::before {
+  right: -100%;
+  top: 0;
+}
+
+.pricing .plan:hover::before {
+  right: 0;
+}
+
+.pricing .plan::after {
+  left: -100%;
+  bottom: 0;
+}
+
+.pricing .plan:hover::after {
+  left: 0;
+}
+
+.pricing .plan li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.pricing .plan li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.pricing .plan img {
+  width: 80px;
+}
+
+.pricing .plan li:not(:last-child) {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.pricing .plan .pricing-features {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d4d4d4;
+}
+
+.pricing .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pricing .price * {
+  margin: 0;
+}
+
+.pricing .price img {
+  margin: 30px 0;
+}
+
+.pricing .price span {
+  color: var(--text-color);
+}
+
+.pricing .price p {
+  color: var(--main-color);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing .price h3 {
+  font-size: 25px;
+}
+
+.pricing .plan * {
+  position: relative;
+  z-index: 2;
+}
+
+.pricing button {
+  all: initial;
+  display: block;
+  font-family: "Cairo", sans-serif;
+  border: 2px solid var(--main-color);
+  background-color: white;
+  color: var(--main-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: var(--main-transition);
+  margin: 25px auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.pricing button:hover {
+  cursor: pointer;
+  background-color: var(--main-color-alt);
+  border-color: var(--main-color-alt);
+  color: white;
+}
+
+.pricing .most-popular {
+  position: absolute !important;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 40px;
+  width: 170px;
+  background-color: var(--main-color);
+  font-size: 20px;
+  color: rgb(17, 17, 17);
+  top: 65px;
+  z-index: 3;
+  right: -45px;
+  color: white;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  font-weight: bold;
+  clip-path:
+    polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+}
+
+.pricing .most-popular span {
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+.pricing .container {
+  margin-top: 80px;
+}
+
+.pricing .plan:nth-child(2) {
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+}
+
+.pricing button:active {
+  background-color: white;
+  color: var(--main-color-alt);
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .pricing button:active {
+    background-color: var(--main-color-alt);
+    color: white;
+  }
+}
+
+/* Pricing End */

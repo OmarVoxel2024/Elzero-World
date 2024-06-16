@@ -1,5 +1,13 @@
 @media (max-width: 768px) {
 
+  .header-title {
+    transform: scale(.85);
+    -webkit-transform: scale(.85);
+    -moz-transform: scale(.85);
+    -ms-transform: scale(.85);
+    -o-transform: scale(.85);
+}
+
   /* Header Start */
 
   header {
@@ -353,5 +361,25 @@
   }
 
 /* Events End */
+
+/* Pricing Start */
+
+.pricing .header-title {
+  margin-top: -35px;
+}
+
+.pricing .container {
+  margin-top: -5px;
+}
+
+.pricing .plan:nth-child(2) {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+/* Pricing End */
 
 }
