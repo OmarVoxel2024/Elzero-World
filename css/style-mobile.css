@@ -23,7 +23,7 @@
     width: 100vw;
   }
 
-  .other-links ul:last-child li:first-child {
+  .other-links ul:last-child {
     border-top: 1px solid #ddd;
   }
 
