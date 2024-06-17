@@ -456,4 +456,20 @@
 
 /* Discount End */
 
+/* Footer Start */
+
+footer > div {
+  flex-basis: calc(100vw - 30px);
+}
+
+footer .imgs {
+  justify-content: center;
+}
+
+footer .links {
+  margin-bottom: 20px;
+}
+
+/* Footer End */
+
 }
