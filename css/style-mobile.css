@@ -23,6 +23,10 @@
     width: 100vw;
   }
 
+  .other-links ul:last-child li:first-child {
+    border-top: 1px solid #ddd;
+  }
+
   header h2 {
     margin: 0;
     margin-bottom: 5px;
