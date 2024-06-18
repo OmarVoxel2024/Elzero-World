@@ -2132,6 +2132,8 @@ body:has(header :checked) .landing .image {
   justify-content: center;
   padding: 35px;
   background-color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .stat p {
@@ -2144,6 +2146,39 @@ body:has(header :checked) .landing .image {
   font-style: italic;
   color: var(--main-color);
   font-weight: bold;
+}
+
+.stat::before,
+.stat::after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  z-index: 10;
+}
+
+.stat::before {
+  left: 0;
+  top: 100%;
+}
+
+.stat:hover::before {
+  top: 0;
+}
+
+.stat::after {
+  right: 0;
+  bottom: 100%;
+}
+
+.stat:hover::after {
+  bottom: 0;
 }
 
 /* Stats End */
